@@ -10,5 +10,6 @@ middleware(server);
 //routes
 server.use("/api/users", userRouter);
 server.use("/api/posts", postRouter);
+server.get("/", (req, res) => res.send("Welcome to the Main API"));
 
 module.exports = server;
